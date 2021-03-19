@@ -44,3 +44,20 @@ WHERE Name = 'Layal';"
 
 "DELETE FROM students
 WHERE Name='Layal';"
+
+
+
+
+"SELECT employees.Name, employees.Company, companies.Date
+FROM employees INNER JOIN companies
+ON employees.Company = companies.Name;"
+
+"SELECT employees.Name
+FROM employees INNER JOIN companies
+ON employees.Company = companies.Name
+WHERE companies.Date < 2000;"
+
+"SELECT companies.Name
+FROM companies INNER JOIN employees
+ON employees.Company = companies.Name
+WHERE employees.Role = 'Graphic Designer';"
