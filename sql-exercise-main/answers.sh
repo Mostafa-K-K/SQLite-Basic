@@ -4,22 +4,22 @@
 WHERE Age > 30;"
 
 "SELECT * FROM students
-WHERE Age > 30
+WHERE Age = 30
 AND Gender = 'F';"
 
 "SELECT Points FROM students
 WHERE Name = 'Alex';"
 
-"INSERT INTO students (Name, Age, Gender, Points)
+"INSERT INTO students
 VALUES ('Mostafa', 21, 'M', 550);"
 
 "UPDATE students
-SET Points = 350
-WHERE ID = 2;"
+SET Points = Points + 100 
+WHERE Name = 'Basma';"
 
 "UPDATE students
-SET Points = 180
-WHERE ID = 1;"
+SET Points = Points - 50 
+WHERE Name = 'Alex';"
 
 
 
