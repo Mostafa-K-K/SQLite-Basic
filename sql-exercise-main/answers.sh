@@ -61,3 +61,27 @@ WHERE companies.Date < 2000;"
 FROM companies INNER JOIN employees
 ON employees.Company = companies.Name
 WHERE employees.Role = 'Graphic Designer';"
+
+
+
+
+
+"SELECT Name
+FROM students
+WHERE Points = (SELECT max(Points) 
+                FROM students);"
+				
+"SELECT avg(Points)
+FROM students;"
+
+"SELECT count()
+FROM students
+WHERE Points = 500;"
+
+"SELECT Name
+FROM students
+WHERE Name like '%s%';"
+
+"SELECT Name
+FROM students
+ORDER BY Points DESC;"
